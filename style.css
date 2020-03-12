@@ -1,0 +1,280 @@
+ body {
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+	margin: 0px;
+	}
+.navbar {
+	opacity: 0.8;
+}
+.header {
+	background-image: url(Img/Wintertrees.jpg);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-attachment: fixed;
+ }
+ .calculator {
+	width: 100%;
+	border: 2px solid #e3e3e3;
+    border-style: outset;
+	padding: 1em;
+}
+#stoimost {
+	height: 2em;
+	font-size: 2em;
+	font-weight: bold;
+	color: red;
+}
+.for {
+	float: left;
+}
+.name p {
+	font-size: 1.5em;
+}
+.pulse {
+ width: 90px;
+ height: 90px;
+ color: #fff;
+ text-align: center;
+ background: #5CC2EA;
+ border-radius: 50%;
+ position: relative;
+}    
+.dws {
+ float: right;
+ padding: 1em;
+}    
+.text {
+ opacity: 0;
+ position: absolute;
+ text-transform: uppercase;
+ font-weight: 700;
+ top: 28px;
+ font-size: 15px;
+ transform: scaleX(-1);
+ transition: .5s ease-in-out;
+ opacity: 0;
+
+}  
+.phone {
+ position: absolute;
+ font-size: 50px;
+ text-align: center;
+ width: 90px;
+ height: 90px;
+ line-height: 94px;
+ animation: phone .9s ease-in-out infinite;
+ /*opacity: 0;*/
+}      
+.pulse:hover .text {
+ transform: scaleX(1);
+ transition: .5s ease-in-out;
+ opacity: 1;
+}    
+.pulse::before,
+.pulse::after  {
+ content: '';
+ position: absolute;
+ border: 1px solid #29AEE3;
+ left: -20px;
+ right: -20px;
+ top: -20px;
+ bottom: -20px;
+ border-radius: 50%;
+ animation: pulse 1.8s linear infinite;
+}    
+.pulse::after {
+ animation-delay: .5s;
+}    
+.pulse:hover i{
+ transition: .5s ease-in-out;
+ transform: scale(0);
+ opacity: 0;
+}    
+.phone i {
+ transition: .5s ease-in-out;
+}    
+@keyframes pulse {
+ 0% {
+  transform: scale(0.5);
+  opacity: 0;
+ }
+ 50% {
+  opacity: 1;
+ }
+ 100% {
+  transform: scale(1.2);
+  opacity: 0;
+ }
+}     
+@keyframes phone {
+ 0%, 100% {
+  transform: rotate(-20deg);
+ }
+ 50% {
+  transform: rotate(21deg);
+ }
+}    
+.about h3{
+background: rgb(255, 255, 255) transparent;
+background: rgba(255, 255, 255, 0.3);
+padding: 2em;
+text-shadow: 1px 1px 2px black;
+}
+.about {
+	background-image: url(Img/142007408.jpg);
+	color: white;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-attachment: fixed;
+	text-align: center;
+ }
+.header .hat{
+	background: rgb(255, 255, 255) transparent;
+	background: rgba(255, 255, 255, 0.3);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	padding-top: 50px;
+ 	border: 2px solid white;
+    border-style: outset;}
+.header .hat section {
+	width: 30%;
+}
+.header .hat section ul{
+	list-style: none;
+}
+.header  .hat li>a {
+	padding: 1em;
+	font-size: 80%;
+	text-decoration: none;
+	color: #e3e3e3;
+	text-shadow: 2px 2px 2px black;
+}
+.header .hat section ul li:hover{
+	border: 2px solid #e3e3e3;
+	border-style: outset;
+	}
+.WhatsApp {
+    background: url(img/whatsapp.png) no-repeat 0 2px; 
+    background-position: right;
+}
+.viber  {
+    background: url(img/viber.png) no-repeat 0 2px; 
+    background-position: right;
+}
+.Telegram  {
+    background: url(img/telegram.png) no-repeat 0 2px;
+    background-position: right;
+}
+.Skype  {
+    background: url(img/skype.png) no-repeat 0 2px;
+    background-position: right;
+}
+.tir img {
+	width: 80%;
+	opacity: 0.7;
+	padding: 2.5em;
+}
+.tir img:hover {
+	width: 81%;
+}
+.cart {
+	padding-top: 30px;
+	font-size: 150%;
+	}
+.name{
+	padding-top: 20px;
+	margin: 10px;
+	color:#fcd959;
+	text-shadow: 1px 1px 2px black, 0 0 1em #262626; 
+	text-align: right;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.price h1{
+	padding-left: 2em;
+}
+.welcome-grids .container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5em;
+}
+.main-block {
+	margin: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.main-block div{
+	border: 2px solid #e3e3e3;
+	border-style: outset;
+	padding: 20px;
+}	
+.main-block div:hover {
+  border-radius: 30%;
+}
+.main-block {
+	font-weight: 700;
+	color:#fcd959;
+	text-align: center;
+}
+.resume h2, #call, #news{
+	text-align: center;
+	height: 2em;
+	background: #262626;
+	color: #e3e3e3;
+	margin: 0px;
+	padding: 0.5em;
+}
+.about {
+	padding: 5px ;
+}
+p:first-letter {
+	margin-left: 40px;
+}
+.map {
+	float: right;
+	opacity: 0.8;
+	
+}
+footer {
+	position: relative;
+	width: 100vw;
+	bottom: 0;
+}
+.contacts{
+	background-image: url(Img/contacts.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-color: #262626;
+	width: 100%;
+	
+}
+
+@media (max-width: 600px) {
+	.tir, .calculator, .name h2 {display: none;}
+	.name p {float: right;} 
+	.header .hat section, .main-block div, .nav-area ul li:hover>ul, .nav-area .dropdown li>a{
+	width: 100%;
+	}
+	.header .hat {
+		height: 100%;
+	}
+	.nav-area ul li:hover>ul{
+		position: static;
+		width: 100%;
+	}
+}
+

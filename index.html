@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://bootstraptema.ru/snippets/effect/2017/ihover9/ihover.css" />
+  	
+</head>
+<body>
+	<header class="header">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" data-value="" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" data-value="home" href="#">Главная
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="reviews" href="#">О_нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="news" href="#">Новости</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="call" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+		<div class="hat">
+		<section id="home" class="tir animated rotateIn"><a href="index.html"><img src="Img/image.png" alt=""></a> </section>
+		<section class="cart">
+			<ul>
+
+				<li><a title="Позвонить Украина" href="tel:+38000000000">+38000000000</a></li>
+				<li><a title="Позвонить Россия" href="tel:+79000000000">+79000000000</a></li>
+				<li><a title="Позвонить Грузия" href="tel:+995000000000">+995000000000</a></li>
+				<li class="WhatsApp"><a title="WhatsApp" href="whatsapp://send?phone=+120345678910">WhatsApp</a></li>
+				<li class="viber"><a title="Viber" href="viber://chat?number=+120345678910">Viber</a></li>
+				<li class="Telegram"><a title="Telegram" href="tg://resolve?domain=nikname">Telegram</a></li>
+				<li class="Skype"><a title="Skype" href="skype:godzikira?chat">Skype</a></li>
+			</ul>
+		</section>
+		<section class="name">
+			 <h1>Транспортная фирма</h1>
+			<h2>г. Краматорск, Донецкая обл., Украина</h2> <br>
+	<div class="calculator">			
+	<h3> Приблизительный расчет стоимости перевозки </h3>
+<input type="text" id="dlina" value="" placeholder="расстояние в км">
+<input type="text" id="ves" value="" placeholder="вес груза в тоннах">
+<button onclick="raschitat();">Рассчитать стоимость</button>
+
+<select id="strana">
+<option value="ukraine">Украина</option>
+<option value="russia">Россия</option>
+<option value="georgea">Грузия</option>
+<option value="turcia">Турция</option>
+</select>
+<div id="stoimost"></div>
+</div>
+		<br><h2>Для более точного расчета</h2>
+		<p>закажите звонок <br> нашего оператора</p>
+		<wrapper data-toggle="modal" data-target="#phone_form">
+  		<div class="dws">
+      		<div class="pulse">
+         	<div class="phone"><i class="fa fa-phone"></i></div>
+         	<div class="text">Кнопка связи</div>
+      		</div>
+   		</div>
+		</wrapper>
+		</section>
+		</div>
+<!-- Modal -->
+<div id="phone_form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close p-0 m-0" type="button" data-dismiss="modal" aria-label="Close">
+<span aria="true">×</span>
+</button>
+<h4 class="modal-title">Заказать звонок</h4>
+</div>
+<div class="modal-body">
+<form>
+<div class="form-group">
+<label class="form-control-label" for="recipient-name">Имя</label>
+<input id="name" class="form-control" type="text" />
+</div>
+<div class="form-group">
+<label class="form-control-label" for="message-text">Сообщение</label>
+<textarea id="message-text" class="form-control"></textarea>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" type="button">Отправить</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="resume">
+	<div>
+		<h2 id="reviews">Почему мы?</h2>
+	</div>
+<div class="welcome-grids">
+	<div class="container">
+
+ <div class="col-md-3 welcome-grid text-center">
+ <div class="ih-item circle effect9 left_to_right"><a href="#">
+ <div class="img"><img src="Img/a_icon1.png" alt="" /></div>
+ <div class="info">
+ <h4><br>Опыт</h4>
+ <i>Который помагает выполнять работу качественно и быстро решать возможные проблемы</i>
+ </div></a>
+ </div>
+ </div>
+ 
+ <div class="col-md-3 welcome-grid text-center">
+ <div class="ih-item circle effect9 left_to_right"><a href="#">
+ <div class="img"><img src="Img/a_icon5.png" alt="" /></div>
+ <div class="info">
+ <h4><br>Клиенты</h4>
+ <i>Более 20 постоянных заказчиков отдают предпочтение сотрудничеству с нами</i>
+ </div></a>
+ </div>
+ </div>
+ 
+ <div class="col-md-3 welcome-grid text-center">
+ <div class="ih-item circle effect9 left_to_right"><a href="#">
+ <div class="img"><img src="Img/a_icon2.png" alt="" /></div>
+ <div class="info">
+ <h4>Скорость<br>и<br>Надежность</h4>
+ 
+ <i>это наши главные достоинства за счет грамотно организованной работы</i>
+ </div></a>
+ </div>
+ </div>
+ 
+ <div class="col-md-3 welcome-grid text-center">
+ <div class="ih-item circle effect9 left_to_right"><a href="#">
+ <div class="img"><img src="Img/a_icon3.png" alt="" /></div>
+ <div class="info">
+ <h4><br>Реультат</h4>
+ <i>которым Вы не будете разочарованы!</i>
+ </div></a>
+ </div>
+ </div>
+  <div class="clearfix"></div>
+</div>
+</div>
+
+	<div>
+		<h2 id="about">О нас</h2>
+	</div>
+	<div class="about">
+		<h3> МЕЖДУНАРОДНЫЕ АВТОМОБИЛЬНЫЕ ПЕРЕВОЗКИ И ИХ ПРЕИМУЩЕСТВА</h3>
+<p>Решив заказать международные автомобильные перевозки грузов, вы получаете массу неоспоримых преимуществ:
+
+скорость выполнения; автогрузоперевозки занимают второе место в рейтинге наиболее оперативных способов доставки груза из пункта А в пункт Б после авиаперевозок. При этом, стоимость данной услуги является более выгодной, нежели во втором случае. Именно поэтому большинство крупных компаний и частных заказчиков прибегают к грузоперевозкам авиатранспортом только в тех случаях, когда необходима доставка скоропортящихся грузов. Во всех остальных случаях, целесообразно использовать автомобили;
+универсальность; перевозки международные могут осуществляться различными грузовыми автомобилями, которые отличаются друг от друга по грузоподъемности и типу кузова. Выбор транспортного средства зависит от груза, который необходимо перевезти. Это могут быть различного рода жидкости, сыпучие вещества, негабаритные конструкции и т.д.
+Наша компания предлагает вам воспользоваться такой услугой, как международные автомобильные перевозки, на выгодных условиях. Мы составим для вас наиболее оптимальный маршрут и позаботимся о соблюдении назначенных сроков.</p>
+
+<h3>КАК ЗАКАЗАТЬ МЕЖДУНАРОДНЫЕ ГРУЗОПЕРЕВОЗКИ ?</h3>
+<p>Для большинства клиентов, которых интересуют международные грузоперевозки, цена является определяющим фактором выбора компании-перевозчика. Мы рады сообщить, что стоимость данной услуги от компании «Европейские транспортные системы» является весьма доступной. Она зависит от таких факторов, как объемы и характеристики транспортируемой продукции, а также расстояние, которое предстоит преодолеть автомобилю.</p>
+	</div>
+</div>
+<div>
+		<h2 id="news">Новости</h2>
+	</div>
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('Img/2.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4">28 февраля 2020</h3>
+          <p class="lead">Наш новый автопарк</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('Img/1.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4">12 лютого у Києві відбулась попереджувальна акція протесту міжнародних автоперевізників України.</h3>
+          <p class="lead">Шановні колеги, перевізники, водії, партнери!У нас з Вами одна спільна мета – забезпечити конституційне право трудових колективів на гідні умови праці!</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('Img/2467702.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4">01 февраля 2020 года</h3>
+          <p class="lead">Водители фур блокируют въезды и центр Киева</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</header>
+<div>
+	<h2 id="call">Связь</h2>
+</div>	
+	<div class="contacts">
+	<div class="map p-5">
+		<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":540,"width":803,"zoom":11,"queryString":"Краматорск, Донецкая область, Украина","place_id":"ChIJm5vqwKSX30AR7HgmWcHe_Ww","satellite":false,"centerCoord":[48.760291091377866,37.53780055178061],"cid":"0x6cfddec1592678ec","lang":"ru","cityUrl":"/ukraine/svyatogorsk-127184","cityAnchorText":"Карта [CITY1], Донецк, Украина","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"175664"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://embedgooglemap.1map.com/js/script-for-user.js?embed_id=175664';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://embedgooglemap.1map.com/ru?embed_id=175664">1 Map</a></div>
+	</div>
+	<div class="p-5">
+	<h4 class="p-5"> Нас легко найти!</h4> 
+	<p>Находимся в индустриальном центре Донбасса - городе Краматорск, поєтому нашими постоянніми клиентами являются такие предприятия как:</p>
+	<ul>
+		<li>Новокраматорский машиностроительный завод НКМЗ</li>
+		<li>ЕНЕРГОМАШСПЕЦСТАЛЬ, ПАТ</li>
+		<li>ООО "Краматорский завод металлических конструкций"</li>
+		<li>ДОНМЕТ, завод автогенного оборудования</li>
+		<li>ПАО "СКМЗ"</li>
+	</ul>
+	</div>
+</div>
+<footer class="page-footer font-small blue pt-4 bg-dark">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase text-light px-2">Разработано на  курсах веб-программирования</h5>
+        <img src="Img/logo.png" class="px-2" alt="yes.say">
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase text-light">Наши телефоны</h5>
+
+        <ul class="list-unstyled text-light">
+          
+				<li>+38000000000</li>
+				<li>+79000000000</li>
+				<li>+995000000000</li>
+				
+		</ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase text-light">График работы</h5>
+
+        <ul class="list-unstyled text-light">
+          <li>пн-пт 8.00 - 18.00</li>
+          <li>сб-вс выходной</li>
+        </ul>
+        <h5 class="text-uppercase text-light">Служба поддержки</h5>
+		<h4 class="text-uppercase text-light">КРУГЛОСУТОЧНО 24/7</h4>
+       
+      </div>
+      </div>
+      </div>
+    <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+    <a class="Light link" href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  </footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/5e7a005625.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
